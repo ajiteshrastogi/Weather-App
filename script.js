@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const descriptionDisplay = document.getElementById('description');
     const errorMessage = document.getElementById('error-message');
 
-    const API_KEY = ""; // put your key from here
+    const API_KEY = ""; // put your key here
     
 
      // it may throw an error
