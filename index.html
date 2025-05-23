@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="container">
+      <h1>🌤️ Weather App</h1>
+      <div class="input-container">
+        <input type="text" id="city-input" placeholder="Search for a city..." autocomplete="off" />
+        <button id="get-weather-btn">Get🔍</button>
+      </div>
+      <div id="weather-info" class="hidden card">
+        <h2 id="city-name"></h2>
+        <div class="weather-icon">
+          <img id="icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" />
+        </div>
+        <p id="temperature"></p>
+        <p id="humidity"></p>
+        <p id="wind-speed"></p>
+        <p id="description"></p>
+      </div>
+      <p id="error-message" class="hidden">⚠️ City not found. Try again.</p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
